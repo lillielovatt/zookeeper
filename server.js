@@ -19,7 +19,7 @@ function filterByQuery(query, animalsArray) {
         }
         // loop thru each trait in personality traits array
         personalityTraitsArray.forEach(trait => {
-            filteredResults=filteredResults.filter( animal => {
+            filteredResults = filteredResults.filter(animal => {
                 return animal.personalityTraits.indexOf(trait) !== -1 //means that it has to exist, because the index of something that isn't in array is -1
             });
         });
@@ -40,13 +40,28 @@ function filterByQuery(query, animalsArray) {
     return filteredResults;
 }
 
+function findById(id, animalsArray) {
+    const result = animalsArray.filter(animal => animal.id === id)[0]; //there should be only 1 result for this, so take 1st instance in array. 
+    //Why not just take the whole array then? BECAUSE it will return an array that has 1 object, as opposed to just returning the object, which is best.
+    return result;
+}
+
 app.get("/api/animals", (req, res) => {
     let results = animals;
     if (req.query) {
         results = filterByQuery(req.query, results);
     }
     res.json(results);
-})
+});
+
+app.get("/api/animals/:id", (req, res) => {
+    const result = findById(req.params.id, animals);
+    if(result){
+        res.json(result);
+    } else{
+        res.send(404);
+    }
+});
 //get requires 2 args - string that describes the route the client will have to fetch from,
 // and CB function that executes every time route is accessed with GET request
 
