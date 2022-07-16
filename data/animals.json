@@ -108,6 +108,61 @@
         "hungry"
       ],
       "id": "10"
+    },
+    {
+      "name": "Larry",
+      "species": "Lemur",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "11"
+    },
+    {
+      "name": "Larry",
+      "species": "Lemur",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "12"
+    },
+    {
+      "name": "Larry",
+      "species": "Harry",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "13"
+    },
+    {
+      "name": "Bertie",
+      "species": "bird",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "anxious"
+      ],
+      "id": "14"
+    },
+    {
+      "name": "Larry",
+      "species": "Harry",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "15"
+    },
+    {
+      "name": "Gabe",
+      "species": "dog",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "loving",
+        "goofy"
+      ],
+      "id": "16"
     }
   ]
 }
