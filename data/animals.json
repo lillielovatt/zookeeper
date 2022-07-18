@@ -163,6 +163,33 @@
         "goofy"
       ],
       "id": "16"
+    },
+    {
+      "name": "Lemon",
+      "species": "bird",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "loving"
+      ],
+      "id": "17"
+    },
+    {
+      "name": "Bertie",
+      "species": "Bear",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "anxious"
+      ],
+      "id": "18"
+    },
+    {
+      "name": "Bun",
+      "species": "elephant",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "19"
     }
   ]
 }
